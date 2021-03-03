@@ -5,7 +5,7 @@
    var level = 0;
    var started = false;
 
-   $(document).keydown(function() {
+   $("h1").click(function() {
      if (!started) {
        started=true;
        nextSecuence();
@@ -59,7 +59,7 @@
        setTimeout(function() {
          $("body").removeClass("game-over");
        },300);
-       $("h1").text("Game Over, Press Any Key to Restart");
+       $("h1").text("Game Over, Click here to Restart");
        startOver();
      }
    }
